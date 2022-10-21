@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+body{
+    color: aliceblue;
+    background-color: rgb(26, 1, 26);
+}
+
+#menu {
+    height: 70px;
+    width: 100%;
+    border-bottom: solid 2px white;
+
+}
+
+#menu img {
+    height: 60px;
+    width: 500px;
+    margin-left: 50px;
+}
+
+#lista {
+    list-style: none;
+    height: 70px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    float: right;
+    position: relative;
+    right: 20px;
+    font-family: 'Righteous', cursive;
+
+}
+
+li {
+    color: aliceblue;
+}
+
+p {
+    font-family: 'Baloo 2', cursive;
+    font-size: 20px;
+    width: 500px;
+    height: fit-content;
+    text-align: center;
+}
+
+
+
+h1 {
+    font-family: 'Righteous', cursive;
+    text-align: center;
+}
+
+#form {
+    background-color: rgba(152, 139, 167, 0.877);
+    width: 60%;
+    padding: 1%;
+    border-radius: 6%;
+    box-shadow: 4px 2px rgb(176, 187, 250);
+
+}
+
+input,
+textarea {
+    box-shadow: 2% 2% rgb(176, 187, 250);
+
+}
+
+input :invalid {
+    border-color: crimson;
+}
+
+span {
+    color: crimson;
+}
+
+.elementform {
+    margin-top: 20px;
+}
+
+button {
+    margin: 2%;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media(max-width:600px){
+    #msg {
+        width: 80%;
+    }
+}
