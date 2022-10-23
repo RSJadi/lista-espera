@@ -8,11 +8,6 @@ body {
     color: aliceblue;
 }
 
-/* 
-
-
-*/
-
 #menu {
     height: 70px;
     width: 100%;
@@ -123,9 +118,9 @@ textarea {
 
 }
 
-input :invalid {
+input:invalid {
     border-color: red;
-    border: 1px solid red;
+    border: 2px solid red;
     box-shadow: 2% 2% red;
 }
 

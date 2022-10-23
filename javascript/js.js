@@ -4,13 +4,12 @@ const rg = document.getElementById('rg-mask');
 const senha = document.getElementById('senha');
 const confirmsenha = document.getElementById('confirmSenha');
 const error = document.getElementById('erro-email');
+const mensagem = document.getElementById('msg');
 const enviar = document.querySelector('button');
 
 //Para não precisar fazer muitas variáveis, é importante olhar no site https://viacep.com.br/ws/01001000/json/ e colocar no html as mesmas ids que o viacep usa
 enviar.addEventListener('click', function (e) {
-    e.preventDefault()
 
-    //função para validar senha 
     function validacao() {
         const senha = document.getElementById('senha');
         const confirmsenha = document.getElementById('confirmSenha');
@@ -21,7 +20,7 @@ enviar.addEventListener('click', function (e) {
             alert('Por favor, verifique se sua senha foi digitada corretamente.')
             e.preventDefault()
         }
-        else if (senha.value == "" || confirmsenha.value == "") {
+        else if (senha.value == "" || confirmsenha.value == "" || mensagem.value == "" || mail == "" || cep.value == "") {
             alert('Por favor, verifique se todos os campos foram preenchidos corretamente.')
             e.preventDefault()
             //
@@ -35,7 +34,7 @@ enviar.addEventListener('click', function (e) {
         switch (rg) {
             case NaN:
                 alert('O valor digitado no RG parece não ser número');
-                break;
+            break;
         }
     return idnumber()
     }
