@@ -20,7 +20,7 @@ enviar.addEventListener('click', function (e) {
             alert('Por favor, verifique se sua senha foi digitada corretamente.')
             e.preventDefault()
         }
-        else if (senha.value == "" || confirmsenha.value == "" || mensagem.value == "" || mail.value == "" || cep.value == "" || mail.value == invalid) {
+        else if (senha.value == "" || confirmsenha.value == "" || mensagem.value == "" || mail.value == "" || cep.value == "") {
             alert('Por favor, verifique se todos os campos foram preenchidos corretamente.')
             e.preventDefault()
             //
