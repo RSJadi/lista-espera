@@ -21,11 +21,8 @@ enviar.addEventListener('click', function (e) {
             && regexSenha != "") {
             alert('Por favor, verifique se sua senha foi digitada corretamente.')
             e.preventDefault()
-        } else if (cep != Response) {
-            alert('Ops.. Verifique se seu CEP foi digitado corretamente')
-            e.preventDefault()
         }
-        else if (senha.value == "" || confirmsenha.value == "" || mensagem.value == "" || mail.value == "" || cep.value == "" || !mail.checkValidity() || cep.length < 8) {
+        else if (senha.value == "" || confirmsenha.value == "" || mensagem.value == "" || mail.value == "" || cep.value == "" || !mail.checkValidity() || cep.length < 8 || cep.value == "00000000") {
             alert('Por favor, verifique se todos os campos foram preenchidos corretamente.')
             e.preventDefault()
             //
@@ -70,8 +67,9 @@ cep.addEventListener('blur', (e) => {
             response.json()
                 .then(data => complet(data))
         }) //se der certo, então faça
-        .catch(e => alert('Ops.. Verifique se seu CEP foi digitado corretamente ' + e.message)) // se der errado, então faça    
+        .catch(e => alert('Ops.. Verifique se seu CEP foi digitado corretamente ' + e.message)) // se der errado, então faça
 })
+
 
 //|| mail.value == "" || mail.value != regexEmail
 
@@ -86,4 +84,3 @@ mail.addEventListener('focus', function () {
     }
 
 })
-
